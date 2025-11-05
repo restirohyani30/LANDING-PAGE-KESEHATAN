@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefarmasi & Pengiriman Obat | Pusat Sehat Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pharmacy-section {
+            padding: 5rem 0;
+            background-color: #f7f9fc;
+            min-height: 80vh;
+        }
+        .pharmacy-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        .pharmacy-container h2 {
+            color: #20c997;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #343a40;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        
+        /* Gaya Khusus untuk Unggah File Resep */
+        .file-upload-wrapper {
+            border: 2px dashed #20c997;
+            border-radius: 5px;
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .file-upload-wrapper:hover {
+            background-color: #e6fff6;
+        }
+        .file-upload-wrapper input[type="file"] {
+            display: none;
+        }
+        #file-name-display {
+            display: block;
+            margin-top: 0.5rem;
+            color: #007bff;
+            font-weight: 600;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #20c997; 
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #17a97e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> PUSAT SEHAT</a>
+            <nav id="nav-menu">
+                </nav>
+            <a href="index.html" class="btn btn-primary" style="margin:0;">Kembali ke Beranda</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="pharmacy-section">
+            <div class="container">
+                <div class="pharmacy-container">
+                    <h2>💊 Pesan Obat & Telefarmasi</h2>
+                    <p style="text-align: center; margin-bottom: 2rem; color: #555;">
+                        Unggah foto resep dokter Anda, dan kami akan mengirimkan obat ke alamat Anda.
+                    </p>
+                    
+                    <form action="konfirmasi_telefarmasi.html" method="GET" id="pharmacy-form" enctype="multipart/form-data">
+                        
+                        <div class="form-group">
+                            <label for="nama_pemesan">Nama Pemesan</label>
+                            <input type="text" id="nama_pemesan">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telepon_pemesan">Nomor Telepon</label>
+                            <input type="tel" id="telepon_pemesan" placeholder="Contoh: 0812xxxxxx">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="alamat_kirim">Alamat Pengiriman Lengkap</label>
+                            <textarea id="alamat_kirim" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Unggah Foto Resep Dokter</label>
+                            <div class="file-upload-wrapper" onclick="document.getElementById('file_resep').click()">
+                                <i class="fas fa-upload" style="font-size: 2rem; color: #20c997;"></i>
+                                <span id="file-name-display" style="color:#555; font-weight:400;">
+                                    Klik untuk mengunggah gambar resep (JPG/PNG)
+                                </span>
+                                <input type="file" id="file_resep" name="file_resep" accept="image/jpeg, image/png">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="catatan">Catatan Tambahan (Misal: Jam kirim)</label>
+                            <textarea id="catatan" rows="2"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Kirim Resep & Pesan Obat</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Sehat Selalu No. 1, Jakarta</p>
+                    <p><i class="fas fa-phone"></i> (021) 123456</p>
+                    <p><i class="fas fa-envelope"></i> info@pusatsehat.com</p>
+                </div>
+                <div class="social-media">
+                    <h3>Ikuti Kami</h3>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Pusat Sehat Digital. Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

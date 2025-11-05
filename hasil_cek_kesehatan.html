@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Penilaian Kesehatan | Pusat Sehat Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Stack+Sans+Headline:wght@200..700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .result-section {
+            padding: 5rem 0;
+            background-color: #f8f9fa;
+            min-height: 80vh;
+        }
+        .result-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            text-align: center;
+        }
+        .result-container h2 {
+            color: #d9534f; /* Warna merah/peringatan */
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            background-color: #f0ad4e; /* Kuning (Perhatian) */
+            color: white;
+        }
+        .recommendations {
+            text-align: left;
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .recommendations h3 {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> PUSAT SEHAT</a>
+            <nav id="nav-menu"></nav> 
+            <a href="index.html" class="btn btn-primary" style="margin:0;">Beranda</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="result-section">
+            <div class="container">
+                <div class="result-container">
+                    <i class="fas fa-exclamation-triangle fa-3x" style="color: #d9534f; margin-bottom: 1rem;"></i>
+                    <h2>Hasil Penilaian Risiko Awal</h2>
+                    
+                    <div class="status-badge">
+                        RISIKO SEDANG
+                    </div>
+
+                    <p style="font-size: 1.1rem; color: #555;">
+                        Berdasarkan jawaban Anda, terdapat beberapa indikator yang memerlukan perhatian lebih lanjut. Hasil ini **bukan diagnosis medis**.
+                    </p>
+
+                    <div class="recommendations">
+                        <h3>Langkah Selanjutnya yang Direkomendasikan:</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle" style="color:#28a745;"></i> **Konsultasi Dokter:** Disarankan untuk melakukan konsultasi video call untuk membahas hasil ini lebih mendalam.</li>
+                            <li><i class="fas fa-check-circle" style="color:#28a745;"></i> **Cek Tekanan Darah:** Pantau tekanan darah Anda selama 3 hari ke depan.</li>
+                            <li><i class="fas fa-check-circle" style="color:#28a745;"></i> **Tingkatkan Aktivitas:** Targetkan 30 menit aktivitas sedang minimal 5 hari seminggu.</li>
+                        </ul>
+                    </div>
+
+                    <a href="konsultasi_cepat.html" class="btn btn-primary" style="margin-top: 2rem; display: inline-block;">
+                        <i class="fas fa-phone"></i> Konsultasi Sekarang
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Sehat Selalu No. 1, Jakarta</p>
+                    <p><i class="fas fa-phone"></i> (021) 123456</p>
+                    <p><i class="fas fa-envelope"></i> info@pusatsehat.com</p>
+                </div>
+                <div class="social-media">
+                    <h3>Ikuti Kami</h3>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Pusat Sehat Digital. Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

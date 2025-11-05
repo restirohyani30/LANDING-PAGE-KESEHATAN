@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Sehat Digital | Kesehatan Anda Prioritas Kami</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Stack+Sans+Headline:wght@200..700&display=swap');
+    </style>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-heartbeat" aria-hidden="true"></i> PUSAT SEHAT</a>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#tips">Tips Sehat</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <video autoplay muted loop id="hero-video" style="display: none;">
+                <source src="health-video.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Kesehatan Anda, Prioritas Kami.</h1>
+                        <p>Temukan tips terpercaya dan akses layanan PUSAT SEHAT 24 jam langsung dari rumah Anda.</p>
+                        <div class="cta-group">
+                            <a href="konsultasi_cepat.html" class="btn btn-primary">Konsultasi Cepat</a>
+                            <a href="cek_kesehatan.html" class="btn btn-secondary" id="quiz-btn">Cek Kesehatan mandiri</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Layanan Unggulan</h2>
+                <div class="service-grid">
+                    <a href="telefarmasi.html" class="card">
+                        <i class="fas fa-video fa-2x" aria-hidden="true"></i>
+                        <h3>Telefarmasi</h3>
+                        <p>Pesan obat resep atau non-resep siap kami kirimkan ke rumah Anda.</p>
+                    </a>
+                    
+                    <a href="cek_laboratorium.html" class="card">
+                        <i class="fas fa-vial fa-2x" aria-hidden="true"></i>
+                        <h3>Cek Laboratorium</h3>
+                        <p>Pesan layanan cek darah & tes kesehatan tanpa perlu ke rumah sakit.</p>
+                    </a>
+                    
+                    <a href="edukasi_sehat.html" class="card">
+                        <i class="fas fa-book-medical fa-2x" aria-hidden="true"></i>
+                        <h3>Edukasi Sehat</h3>
+                        <p>Akses ratusan artikel dan panduan gaya hidup sehat terpercaya.</p>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="tips">
+            <div class="container">
+                <h2>Tips Kesehatan Terkini</h2>
+                <div class="tip-grid">
+                    <article class="tip-card">
+                        <h3><i class="fas fa-moon" aria-hidden="true"></i> Pentingnya Kualitas Tidur</h3>
+                        <p>Pelajari cara meningkatkan kualitas tidur Anda untuk energi maksimal.</p>
+                        <a href="kualitas_tidur.html">Baca Selengkapnya</a>
+                    </article>
+                    
+                    <article class="tip-card">
+                        <h3><i class="fas fa-apple-alt" aria-hidden="true"></i> 5 Makanan Peningkat Imun</h3>
+                        <p>Daftar makanan super yang wajib Anda konsumsi setiap hari.</p>
+                        <a href="makanan_imun.html">Baca Selengkapnya</a>
+                    </article>
+                </div>
+
+                <div class="video-container-wrapper">
+                    <h3>Tonton Video Edukasi Kami</h3>
+                    <div class="video-responsive">
+                        <iframe width="100%" height="450" src="https://www.youtube.com/embed/jkS6glRPD_o?si=F3ZpgIWNZrbqiTWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Jl. Sehat Selalu No. 1, Jakarta</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> (021) 123456</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> info@pusatsehat.com</p>
+                </div>
+                <div class="social-media">
+                    <h3>Ikuti Kami</h3>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Pusat Sehat Digital. Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

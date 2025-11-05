@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi Kesehatan | Pusat Sehat</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Stack+Sans+Headline:wght@200..700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+        .edu-container {
+            padding: 4rem 0;
+            min-height: 85vh;
+        }
+        .edu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .edu-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: left;
+            transition: transform 0.3s;
+        }
+        .edu-card:hover {
+            transform: translateY(-5px);
+        }
+        .edu-card h3 i {
+            color: #007bff;
+            margin-right: 0.5rem;
+        }
+        .edu-card a {
+            display: block;
+            margin-top: 1rem;
+            color: #007bff;
+            font-weight: 600;
+        }
+        /* Style untuk tombol kembali */
+        .back-to-home {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-to-home i {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> PUSAT SEHAT</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="edu-container">
+            <div class="container">
+                <a href="index.html" class="back-to-home"><i class="fas fa-arrow-left"></i> Kembali ke Beranda</a>
+
+                <h1 class="text-center" style="text-align: center; color: #007bff;"><i class="fas fa-book-medical"></i> Pusat Edukasi Kesehatan</h1>
+                <p class="text-center" style="text-align: center; margin-bottom: 3rem;">Baca panduan terpercaya dan tips terbaru untuk menjalani hidup yang lebih sehat dan bahagia.</p>
+                
+                <div class="edu-grid">
+                    <div class="edu-card">
+                        <h3><i class="fas fa-moon"></i> Pentingnya Kualitas Tidur</h3>
+                        <p>Pelajari cara meningkatkan kualitas tidur Anda untuk energi maksimal.</p>
+                        <a href="kualitas_tidur.html">Baca Artikel</a>
+                    </div>
+                    <div class="edu-card">
+                        <h3><i class="fas fa-apple-alt"></i> 5 Makanan Peningkat Imun</h3>
+                        <p>Daftar makanan super yang wajib Anda konsumsi setiap hari.</p>
+                        <a href="makanan_imun.html">Baca Artikel</a>
+                    </div>
+                    <div class="edu-card">
+                        <h3><i class="fas fa-running"></i> Panduan Olahraga di Rumah</h3>
+                        <p>Rutin olahraga ringan tanpa harus ke gym. Tips efektif untuk pemula.</p>
+                        <a href="#">Baca Artikel</a>
+                    </div>
+                    <div class="edu-card">
+                        <h3><i class="fas fa-mug-hot"></i> Manajemen Stres Harian</h3>
+                        <p>Teknik relaksasi dan meditasi sederhana untuk kesehatan mental.</p>
+                        <a href="#">Baca Artikel</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

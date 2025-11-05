@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Kesehatan Mandiri | Pusat Sehat Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Stack+Sans+Headline:wght@200..700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .quiz-section {
+            padding: 5rem 0;
+            background-color: #ffffff;
+            min-height: 80vh;
+        }
+        .quiz-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .quiz-container h2 {
+            color: #28a745;
+            margin-bottom: 1.5rem;
+        }
+        .question-card {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #007bff;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .question-card label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .quiz-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: background-color 0.3s;
+        }
+        .quiz-btn:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> PUSAT SEHAT</a>
+            <nav id="nav-menu">
+                </nav>
+            <a href="index.html" class="btn btn-primary" style="margin:0;">Kembali ke Beranda</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="quiz-section">
+            <div class="container">
+                <div class="quiz-container">
+                    <h2>🩺 Tes Kesehatan Mandiri</h2>
+                    <p>Jawab pertanyaan di bawah ini untuk mendapatkan penilaian risiko kesehatan awal Anda.</p>
+                    <hr style="margin: 1.5rem 0; border-top: 1px solid #ddd;">
+                    
+                    <form id="health-quiz"> 
+                        <div class="question-card">
+                            <label>1. Dalam 7 hari terakhir, berapa hari Anda melakukan aktivitas fisik sedang (jalan cepat, dll.) selama 30 menit atau lebih?</label>
+                            <input type="number" min="0" max="7" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                        </div>
+
+                        <div class="question-card">
+                            <label>2. Seberapa sering Anda merasa cemas atau stres berlebihan dalam sebulan terakhir?</label>
+                            <select style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                                <option>Pilih...</option>
+                                <option>Jarang/Tidak pernah</option>
+                                <option>Kadang-kadang</option>
+                                <option>Sering</option>
+                                <option>Hampir setiap hari</option>
+                            </select>
+                        </div>
+                        
+                        <div class="question-card">
+                            <label>3. Apakah Anda memiliki riwayat tekanan darah tinggi (hipertensi) atau diabetes?</label>
+                            <input type="radio" name="riwayat" value="ya"> Ya &nbsp; 
+                            <input type="radio" name="riwayat" value="tidak"> Tidak
+                        </div>
+
+                        <button type="submit" class="quiz-btn">Lihat Hasil Penilaian</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Sehat Selalu No. 1, Jakarta</p>
+                    <p><i class="fas fa-phone"></i> (021) 123456</p>
+                    <p><i class="fas fa-envelope"></i> info@pusatsehat.com</p>
+                </div>
+                <div class="social-media">
+                    <h3>Ikuti Kami</h3>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Pusat Sehat Digital. Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> 
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Diterima | Telefarmasi | Pusat Sehat Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+        .confirmation-section {
+            /* Properti Kunci untuk Penengahan */
+            min-height: 100vh; /* Menggunakan seluruh tinggi layar */
+            display: flex;
+            align-items: center; /* Tengah Vertikal */
+            justify-content: center; /* Tengah Horizontal */
+            
+            /* Properti Lain */
+            padding: 2rem 0; 
+            background-color: #f8f9fa; 
+            text-align: center;
+        }
+        .confirmation-box {
+            max-width: 600px;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            background-color: #ffffff;
+            border-top: 5px solid #28a745; /* Border warna hijau */
+            margin: 20px; /* Margin agar responsif */
+        }
+        .confirmation-box .icon {
+            color: #28a745;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+        .confirmation-box h2 {
+            color: #343a40;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .next-steps-list {
+            text-align: left;
+            margin-top: 2rem;
+            padding-left: 0;
+            list-style: none;
+        }
+        .next-steps-list li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+        .next-steps-list li i {
+            color: #28a745;
+            margin-right: 10px;
+        }
+        .btn-green {
+            background-color: #28a745;
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        .btn-green:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-heartbeat" aria-hidden="true"></i> PUSAT SEHAT</a>
+            <nav id="nav-menu">
+            </nav>
+            <a href="index.html" class="btn btn-primary btn-header" style="margin:0;">Kembali ke Beranda</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="confirmation-section">
+            <div class="confirmation-box">
+                <div class="icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Pesanan Obat Anda Telah Diterima!</h2>
+                <p>Terima kasih telah menggunakan layanan Telefarmasi Pusat Sehat Digital. Kami telah menerima permintaan pesanan obat Anda.</p>
+                
+                <ul class="next-steps-list">
+                    <li><i class="fas fa-clock"></i> **Langkah 1:** Apoteker kami sedang memeriksa resep/daftar obat Anda.</li>
+                    <li><i class="fas fa-comment-dots"></i> **Langkah 2:** Kami akan segera menghubungi Anda via WhatsApp di nomor yang terdaftar untuk konfirmasi total biaya dan ketersediaan obat.</li>
+                    <li><i class="fas fa-shipping-fast"></i> **Langkah 3:** Setelah pembayaran dikonfirmasi, obat akan langsung diproses dan dikirimkan ke alamat Anda.</li>
+                </ul>
+
+                <p style="margin-top: 2rem;">Waktu respons Apoteker: **Maksimal 30 menit**.</p>
+                
+                <a href="index.html" class="btn-green">Kembali ke Beranda</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Kontak Kami</h3>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Jl. Sehat Selalu No. 1, Jakarta</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> (021) 123456</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> info@pusatsehat.com</p>
+                </div>
+                <div class="social-media">
+                    <h3>Ikuti Kami</h3>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Pusat Sehat Digital. Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
